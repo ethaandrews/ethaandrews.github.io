@@ -1,9 +1,8 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
     <head>
         <title>Ethan's Original Website</title>
-        
-         <style>
+        <style type="text/css">
             body {
                 background: rgb(125, 198, 205);
                 color: rgb(45, 45, 45);
@@ -13,6 +12,9 @@
             header {
                 font-size: 1.5em;
                 font-weight: bold;
+            }
+            h1 {
+                margin: 10px;
             }
             #all-contents {
                 max-width: 800px;
@@ -49,52 +51,57 @@
                 background: rgb(245, 238, 219);
                 display: flex;
             }
-            .sidebar {
-                margin-right: 25px;
-                padding: 10px;
-            }
-            .sidebar img {
-                width: 200px;
-            }
             .content {
                 flex: 1;
                 padding: 15px;
             }
-            .interests header {
-                font-size: 1.25em;
+             /* portfolio styles */
+            #portfolio {
+                list-style-type: none;
+                padding-left: 0;
+            }
+            
+            #portfolio li {
+                background: #fff;
+                padding: 10px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+            
+            #portfolio li:hover {
+                background: #eee;
+            } 
+            
+            #portfolio a {
+                text-decoration: none;
+                color: #454545;
             }
         </style>
     </head>
-    
+
     <body>
-        <div id="all-contents">
-            <nav>
-                <header>Ethan's Original Website</header>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
+      <div id="all-contents">
+          <nav>
+            <header>Ethan's Original Website</header>
+            <ul>
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="portfolio.html">Portfolio</a>
+                </li>
+            </ul>
+        </nav>
+             <!-- Nav stuff here...-->
+        </nav> 
+        <main>
+            <div class="content">
+                <h1>Portfolio</h1>
+                <ul id="portfolio">
                 </ul>
-            </nav> 
-            
-            <main>
-                <div class="sidebar">
-                    <img src="lsu.jpg">
-                </div>
-                
-                <div class="content">
-                    <header>Ethan</header>
-                    <p>Student at Sumner High School</p>
-                   <section class="interest">
-                       <header>Interests</header>
-                       <ul>
-                           <li>Football</li>
-                           <li>LSU</li>
-                           <li>Hanging out with friends and family</li>
-                       </ul>
-                   </section>
-                </div>
-            </main>
-        </div>
+            </div>
+        </main>
+        
+    </div>
+      
+      </div>
     </body>
 </html>
-    
